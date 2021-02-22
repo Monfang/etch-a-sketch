@@ -1,0 +1,24 @@
+/* Global */
+body {
+font-family: 'Roboto', sans-serif;
+}
+
+/* Aligns all content within the container to the center */
+#container {
+  text-align: center;
+}
+
+/* Sets the overall rules for the visual grid box */
+#gridContainer {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  border: 5px solid black;
+  border-radius: 5px;
+  align: center;
+}
+
+/* Adds spacing around the button */
+#buttonDiv {
+  padding: 1em;
+}
