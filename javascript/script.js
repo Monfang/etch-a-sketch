@@ -9,7 +9,6 @@ function changeGrid() {
   createGrid(promptSize);
 }
 
-let random = '';
 
 function getRandomColor() {
   var letters = '0123456789ABCDEF';
@@ -20,9 +19,13 @@ function getRandomColor() {
   return color;
 }
 
-
+  //random = getRandomColor();
+  //console.log(random);
 
 function createGrid(numberOfRows) {
+  //let color = random
+  //console.log(color);
+
   var Container = document.getElementById("container");
   Container.innerHTML = '';
 
@@ -35,12 +38,11 @@ function createGrid(numberOfRows) {
     document.getElementById("container").appendChild(div);
 
     div.addEventListener("mouseenter", function () {
-    this.style.backgroundColor = getRandomColor();
+      //getRandomColor();
+      this.style.backgroundColor = "black";
     });
   }
 }
 
-getRandomColor();
-createGrid(16);
 
-console.log(random);
+createGrid(16);
