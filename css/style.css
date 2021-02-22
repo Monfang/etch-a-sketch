@@ -37,7 +37,7 @@ body {
 
  div.grid {
   border: 1px solid #000;
-  margin: -1px;
+  
 }
 
 @media (max-width: 450px) {
