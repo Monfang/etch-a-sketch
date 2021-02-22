@@ -1,3 +1,5 @@
+let brushColor = 'black';
+
 function changeGrid() {
   let promptSize = prompt("How many rows do you want?");
   
@@ -15,16 +17,12 @@ function getRandomColor() {
   for (var i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
   }
+  brushColor = color;
   return color;
 }
 
-  //random = getRandomColor();
-  //console.log(random);
 
 function createGrid(numberOfRows) {
-  //let color = random
-  //console.log(color);
-
   var Container = document.getElementById("container");
   Container.innerHTML = '';
 
@@ -37,7 +35,12 @@ function createGrid(numberOfRows) {
     document.getElementById("container").appendChild(div);
 
     div.addEventListener("mouseover", function () {
-      this.style.backgroundColor = getRandomColor();
+      if (brushColor === 'black') {
+        this.style.backgroundColor = brushColor;
+      } else { 
+        this.style.backgroundColor = (getRandomColor());
+      }
+      
     });
   }
 }
