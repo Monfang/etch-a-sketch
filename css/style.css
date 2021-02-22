@@ -1,24 +1,36 @@
 /* Global */
 body {
-font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: #dff7f7;
 }
 
 /* Aligns all content within the container to the center */
-#container {
+#bodyContainer {
   text-align: center;
-}
-
-/* Sets the overall rules for the visual grid box */
-#gridContainer {
-  width: 500px;
-  height: 500px;
-  margin: auto;
-  border: 5px solid black;
-  border-radius: 5px;
-  align: center;
 }
 
 /* Adds spacing around the button */
 #buttonDiv {
   padding: 1em;
+}
+
+/* Sets the overall rules for the visual grid box */
+#container {
+  display: grid;
+  grid-template-columns: repeat(var(--columns-row), 1fr);
+  grid-template-rows: repeat(var(--columns-row), 1fr);
+  width: 500px;
+  height: 500px;
+  border: 5px solid black;
+  border-radius: 5px;
+  margin: auto;
+  align: center;
+ }
+
+ :root {
+   --columns-row: 2;
+ }
+
+ div.grid {
+  border: 1px solid #000;
 }
