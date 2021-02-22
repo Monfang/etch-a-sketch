@@ -38,8 +38,7 @@ function createGrid(numberOfRows) {
     document.getElementById("container").appendChild(div);
 
     div.addEventListener("mouseenter", function () {
-      //getRandomColor();
-      this.style.backgroundColor = "black";
+      this.style.backgroundColor = getRandomColor();
     });
   }
 }
