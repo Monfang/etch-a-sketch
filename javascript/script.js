@@ -1,13 +1,12 @@
 function changeGrid() {
   let promptSize = prompt("How many rows do you want?");
-
-    if ((promptSize > 64) || (promptSize < 1) || !(typeof(promptSize) === 'number')) {
-      alert("Please choose a number from 1 to 64");
-      return;
-          }
-  //console.log(promptSize);
-  createGrid(promptSize);
-}
+  
+   if ((promptSize <= 64) && (promptSize >= 1)) {
+    createGrid(promptSize);  
+    return;
+   } 
+    alert("Please choose a number from 1 to 64");
+   }
 
 
 function getRandomColor() {
