@@ -36,7 +36,7 @@ function createGrid(numberOfRows) {
     div.className = "grid";
     document.getElementById("container").appendChild(div);
 
-    div.addEventListener("mouseenter", function () {
+    div.addEventListener("mouseover", function () {
       this.style.backgroundColor = getRandomColor();
     });
   }
