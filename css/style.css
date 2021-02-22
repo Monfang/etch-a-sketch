@@ -39,3 +39,10 @@ body {
   border: 1px solid #000;
   margin: -1px;
 }
+
+@media (max-width: 450px) {
+  #container {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
