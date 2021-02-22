@@ -1,6 +1,3 @@
-//let btn = document.getElementById("start");
-//numberOfRows = prompt("How many rows do you want?");
-//btn.addEventListener("click", createGrid);
 
 function changeGrid() {
   let promptSize = prompt("How many rows do you want?");
