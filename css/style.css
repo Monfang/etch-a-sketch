@@ -35,9 +35,10 @@ body {
   width: 500px;
   height: 500px;
   border: 5px solid black;
-  border-radius: 5px;
+  border-radius: 5px; 
   margin: auto;
-  box-shadow: 1px;
+  box-shadow: 5px pink;
+
  }
 
  /* Sets display for the grids */
