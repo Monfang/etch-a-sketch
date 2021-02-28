@@ -1,4 +1,4 @@
-##The Odin Project: Fundamentals - Etch-A-Sketch
+## The Odin Project: Fundamentals - Etch-A-Sketch
 
 This project included building a browser version of an Etch-A-Sketch. 
 
